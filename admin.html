@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin · Boondock Echo Lead Desk</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="hdr">
+  <div class="wrap hdr-top">
+    <div>
+      <h1>Search admin</h1>
+      <p class="sub">Tell the daily crawl what to look for. Default location: Chicago, IL.</p>
+    </div>
+    <a class="admin-link" href="index.html">Back to leads</a>
+  </div>
+  <div class="wrap">
+    <p class="note">Saving opens a GitHub issue titled <code>search-config: update</code>. Sign in as <strong>vibhvesh</strong> (or a repo collaborator). The next daily run applies the newest valid issue and ignores everyone else. Nothing is posted to social networks or emailed from here.</p>
+  </div>
+</header>
+<main class="wrap admin">
+  <p id="admin-status" class="count">Loading current search config…</p>
+  <form id="admin-form" class="admin-form" hidden>
+    <label>Crawler instructions
+      <textarea id="instructions" rows="6" placeholder="What the daily sweep should do…"></textarea>
+    </label>
+    <fieldset>
+      <legend>Queries by track</legend>
+      <p class="hint">One query per line.</p>
+      <label>Organisations and teams <textarea id="q-organisations" rows="5"></textarea></label>
+      <label>Radio dealers and integrators <textarea id="q-dealers" rows="5"></textarea></label>
+      <label>Individual hobbyists <textarea id="q-hobbyists" rows="5"></textarea></label>
+      <label>News and signals <textarea id="q-news" rows="4"></textarea></label>
+    </fieldset>
+    <div class="admin-grid">
+      <label>Include keywords <textarea id="include_keywords" rows="5" placeholder="One per line"></textarea></label>
+      <label>Exclude keywords <textarea id="exclude_keywords" rows="5" placeholder="One per line"></textarea></label>
+    </div>
+    <label>Locations <span class="hint">Chicago first, then the rest of the US. One per line.</span>
+      <textarea id="locations" rows="4"></textarea>
+    </label>
+    <div class="admin-grid">
+      <label>Sources to use <textarea id="sources-use" rows="5"></textarea></label>
+      <label>Sources to skip <textarea id="sources-skip" rows="5"></textarea></label>
+    </div>
+    <label class="minutes">Minutes per run
+      <input id="minutes_per_run" type="number" min="5" max="10" step="1" required>
+      <span class="hint">Between 5 and 10.</span>
+    </label>
+    <div class="admin-actions">
+      <button type="submit" class="btn">Save as GitHub issue</button>
+      <a id="edit-github" class="btn ghost" href="https://github.com/vibhvesh/boondock-echo-lead-desk/edit/main/config/search.json" target="_blank" rel="noopener noreferrer">Edit directly on GitHub</a>
+    </div>
+  </form>
+  <pre id="admin-error" class="empty" hidden></pre>
+</main>
+<footer class="wrap foot">Boondock Echo Lead Desk · changes from other GitHub accounts are ignored</footer>
+<script type="module" src="js/admin.js"></script>
+</body>
+</html>

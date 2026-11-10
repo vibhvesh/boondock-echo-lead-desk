@@ -9,14 +9,23 @@
 </head>
 <body>
 <header class="hdr">
+  <div class="wrap hdr-top">
+    <div>
+      <h1>Boondock Echo Lead Desk</h1>
+      <p class="sub">Default location: Chicago, IL · <span id="last-updated">Loading…</span></p>
+    </div>
+    <a class="admin-link" href="admin.html">Admin</a>
+  </div>
   <div class="wrap">
-    <h1>Boondock Echo Lead Desk</h1>
-    <p class="sub">Lead &amp; news sweep · <strong>10 Nov 2026</strong> · Default location: Chicago, IL</p>
     <p class="note">Read-only research. Nothing here was posted, sent or replied to. All outreach is human-reviewed only. Verify every item at its source before contact.</p>
   </div>
 </header>
 <main class="wrap">
   <section id="summary" class="summary" aria-label="Summary counts"></section>
+  <nav class="tabs" aria-label="Lead lists">
+    <button type="button" id="tab-active" class="tab on" aria-pressed="true">Active</button>
+    <button type="button" id="tab-archive" class="tab" aria-pressed="false">Archive</button>
+  </nav>
   <section class="filters" aria-label="Filters">
     <label>Track <select id="f-track"><option value="">All tracks</option></select></label>
     <label>Tier <select id="f-tier"><option value="">All tiers</option></select></label>
@@ -27,7 +36,10 @@
       <option value="unknown">Unknown</option>
     </select></label>
     <label class="grow">Search <input id="f-q" type="search" placeholder="Search titles, quotes, notes…"></label>
-    <a id="csv-link" class="btn" href="data/sweep-2026-11-10.csv" download>Download CSV</a>
+    <div class="downloads">
+      <a id="csv-link" class="btn ghost" href="data/leads.csv" download>Download CSV</a>
+      <a id="xlsx-link" class="btn" href="data/leads.xlsx" download>Download Excel</a>
+    </div>
   </section>
   <p id="count" class="count"></p>
   <section id="leads" class="leads" aria-live="polite"></section>

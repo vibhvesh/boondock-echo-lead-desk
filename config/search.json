@@ -1,0 +1,72 @@
+{
+  "instructions": "Chicago-first, then the rest of the United States. Search only public, approved sources. Never invent leads, quotes, contacts or emails. Never post, reply, like, DM or email anyone. Capture the exact quote and the source URL for every item. Prefer open buying signals (RFPs, recorder replacements, 911/dispatch logging) for organisations; channel fit for radio dealers and integrators; product-intent posts for hobbyists. Mark closed bids and items older than 90 days clearly. Default location is Chicago, Illinois, USA. Do not use device or phone location.",
+  "queries": {
+    "organisations": [
+      "Chicago 911 communications recorder RFP",
+      "Illinois public safety audio logger bid",
+      "replace radio voice recorder dispatch",
+      "police fire EMS radio logging recorder",
+      "Metra OR OEMC communications recorder"
+    ],
+    "dealers": [
+      "Motorola two-way radio dealer Chicago",
+      "Illinois radio integrator voice logger",
+      "LMR dealer push to talk applications",
+      "authorized radio dealer communications recorder"
+    ],
+    "hobbyists": [
+      "transcribe ham radio Whisper",
+      "SDR automatic radio transcription",
+      "scanner P25 DMR transcribe",
+      "amateurradio logger that listens to QSOs"
+    ],
+    "news": [
+      "Chicago OEMC 911 dispatch system",
+      "Illinois public safety radio upgrade logging",
+      "911 recorder obsolete replacement",
+      "incident command radio logging"
+    ]
+  },
+  "include_keywords": [
+    "audio logger",
+    "communications recorder",
+    "radio transcription",
+    "voice logging",
+    "push-to-talk",
+    "911 recorder",
+    "dispatch recorder",
+    "Whisper",
+    "radio intelligence"
+  ],
+  "exclude_keywords": [
+    "FM broadcast",
+    "podcast",
+    "music radio",
+    "Spotify",
+    "talk radio show",
+    "streaming playlist"
+  ],
+  "locations": [
+    "Chicago, Illinois, USA",
+    "Illinois, USA",
+    "United States"
+  ],
+  "sources": {
+    "use": [
+      "government bid boards",
+      "official procurement portals",
+      "public news",
+      "Reddit public posts",
+      "X public posts",
+      "dealer and integrator websites"
+    ],
+    "skip": [
+      "direct messages",
+      "private groups",
+      "paywalled contact lists",
+      "unsolicited email outreach"
+    ]
+  },
+  "minutes_per_run": 8,
+  "updated_at": "2026-11-10T12:37:00+05:30"
+}
