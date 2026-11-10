@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Boondock Echo Lead Desk</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="hdr">
+  <div class="wrap">
+    <h1>Boondock Echo Lead Desk</h1>
+    <p class="sub">Lead &amp; news sweep · <strong>10 Nov 2026</strong> · Default location: Chicago, IL</p>
+    <p class="note">Read-only research. Nothing here was posted, sent or replied to. All outreach is human-reviewed only. Verify every item at its source before contact.</p>
+  </div>
+</header>
+<main class="wrap">
+  <section id="summary" class="summary" aria-label="Summary counts"></section>
+  <section class="filters" aria-label="Filters">
+    <label>Track <select id="f-track"><option value="">All tracks</option></select></label>
+    <label>Tier <select id="f-tier"><option value="">All tiers</option></select></label>
+    <label>Location <select id="f-loc">
+      <option value="">All locations</option>
+      <option value="chicago-il">Chicago / Illinois</option>
+      <option value="other-us">Other US</option>
+      <option value="unknown">Unknown</option>
+    </select></label>
+    <label class="grow">Search <input id="f-q" type="search" placeholder="Search titles, quotes, notes…"></label>
+    <a id="csv-link" class="btn" href="data/sweep-2026-11-10.csv" download>Download CSV</a>
+  </section>
+  <p id="count" class="count"></p>
+  <section id="leads" class="leads" aria-live="polite"></section>
+</main>
+<footer class="wrap foot">Boondock Echo — AI radio intelligence · <a href="https://boondockecho.com" target="_blank" rel="noopener noreferrer">boondockecho.com</a></footer>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
