@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-11-21T07:14:07+05:30",
   "updated_at_ist": "21 Nov 2026, 07:14 Asia/Calcutta",
-  "count": 13,
+  "count": 14,
   "runs": [
     {
       "run_at": "2026-11-10T12:41:40+05:30",
@@ -184,6 +184,20 @@
       "error_count": 0,
       "errors": "",
       "notes": "added 3 of 3 items"
+    },
+    {
+      "run_at": "2026-11-21T07:14:07+05:30",
+      "command": "publish",
+      "source_file": "/workspace/boondock-leads/leads.xlsx",
+      "ingested": 0,
+      "duplicates": 0,
+      "near_duplicates": 0,
+      "archived": 0,
+      "config_applied": "",
+      "published": "3ad2240",
+      "error_count": 0,
+      "errors": "",
+      "notes": "push=ok"
     }
   ]
 }
